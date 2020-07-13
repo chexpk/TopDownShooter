@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 4832809132304189071}
   - component: {fileID: 8622452037426726244}
   - component: {fileID: 8774718014892650059}
+  - component: {fileID: 8025273767606793921}
   m_Layer: 0
-  m_Name: tree_1
+  m_Name: tree_1ForTarrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8025273767606793921
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008835849408419876}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.8, y: 40, z: 6.8}
+  m_Center: {x: 0, y: 20, z: 0}

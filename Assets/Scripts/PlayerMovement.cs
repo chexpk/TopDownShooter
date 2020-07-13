@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour {
     float m_horizontal;
     float m_vertical;
 
+    //тест joystick pack
+    public Joystick joystick;
+
     public float PlayerSpeed = 0.3f;
 
     public GameObject animationModel;
@@ -25,8 +28,10 @@ public class PlayerMovement : MonoBehaviour {
 
     // Update is called once per frame
     void FixedUpdate () {
-        m_horizontal = Input.GetAxis ("Horizontal");
-        m_vertical = Input.GetAxis ("Vertical");
+        // m_horizontal = Input.GetAxis ("Horizontal");
+        // m_vertical = Input.GetAxis ("Vertical");
+        m_horizontal = joystick.Horizontal;
+        m_vertical = joystick.Vertical;
 
         Vector3 m_playerMovement = new Vector3 (m_horizontal, 0f, m_vertical) * PlayerSpeed;
 
@@ -52,3 +57,5 @@ public class PlayerMovement : MonoBehaviour {
         // animator.SetFloat ("VelY", moveDirection.z, 0.05f, Time.deltaTime);
     }
 }
+
+
