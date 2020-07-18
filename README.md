@@ -1,2 +1,4 @@
 # TopDownShooter
- Top down shooter creation test
+Шутер с видом сверху. Игровой движок Unity.
+Проект находится в процессе производства. 
+
