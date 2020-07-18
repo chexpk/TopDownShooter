@@ -9,6 +9,7 @@ public class GameControllerScript : MonoBehaviour {
     private int enemyCount = 0;
     public bool isAllSpawnPointWork = true;
 
+    public bool isReadyToShoot = false;
 
     // Start is called before the first frame update
     void Start () {
@@ -27,6 +28,16 @@ public class GameControllerScript : MonoBehaviour {
     void ChangeAllSpawnPointWork () {
         if (enemyCount > 20) {
             isAllSpawnPointWork = false;
+        }
+    }
+
+    public void GetReadyToShoot (bool isReady) {
+        if (isReady) {
+            isReadyToShoot = true;
+            Debug.Log ("Start Shoot");
+        } else {
+            isReadyToShoot = false;
+            Debug.Log ("Stop Shoot");
         }
     }
 }
